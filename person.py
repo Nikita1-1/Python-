@@ -28,7 +28,7 @@ class User:
     email = ''
     password ='123qwerty'
     account_number = 0
-
+    
 #class employee inherint attributes from User class + its own parametrs
 
 class Employee(User):

@@ -15,7 +15,7 @@ class Figure:#parent class
 
 class Circle(Figure):#child class
 
-    def __init__(self, width, height, radius, color, shape, size):
+    def __init__(self, width, height, radius, color, shape, size):#creating own parametrs that is not operating with parent class
         super().__init__(width, height, radius, color, shape)# super function is the same as if we put parent class Name, however now we no need to use SELF, because super is taking care of it
 
         
