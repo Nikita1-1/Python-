@@ -8,7 +8,7 @@ where i had to work on backend development small project applications as well as
 
 <ul> 
     <li><a href="https://github.com/Nikita1-1/Python-/tree/main/pyhton_projects/DjangoUniversity" target="_blank">Django University</a></li>
-    <li><a href="<a href="https://github.com/Nikita1-1/Python-/tree/main/pyhton_projects/BlueBirdBanking_project/BlueBirdbanking" target="_blank">Blue Bird Banking</a></li>
+    <li><a href="https://github.com/Nikita1-1/Python-/tree/main/pyhton_projects/BlueBirdBanking_project/BlueBirdbanking" target="_blank">Blue Bird Banking</a></li>
     <li><a href="https://github.com/Nikita1-1/Python-/tree/main/phonebook" target="_blank">Phone Book</a></li>
     <li><a href="https://github.com/Nikita1-1/Python-/tree/main/pyhton_projects/File_Transfer" target="_blank">File Transfer</a></li>
     <li> <a href="https://github.com/Nikita1-1/Python-/tree/main/mainapp" target="_blank">Main App</a></li>
