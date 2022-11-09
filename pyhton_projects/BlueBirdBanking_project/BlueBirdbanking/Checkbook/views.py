@@ -11,7 +11,7 @@ def home(request):
         pk = request.POST['account']# if the form is submitted retrive which account the user whants to view
         return balance(request, pk) # call balance function to render that account's Balance Sheet
     content = {'form': form}
-    return render(request, 'checkbook/index.html')
+    return render(request, 'checkbook/index.html', content)
 
 
 # this function will render the Create New Account page when requeste
@@ -31,7 +31,7 @@ def create_account(request):
 
 def balance(request, pk):
     account = get_object_or_404(Account, pk=pk) # retrive the requested account using its primiry key
-    transactions = Transaction.Transactions.filter(account=pk) # retrive all of that account's transactions
+    transactions = Transaction.Transaction.filter(account=pk) # retrive all of that account's transactions
     current_total = account.initial_deposit # create account that variable, starting with initial deposit value
     table_contents ={} # creates a dictionary into which transaction information will be placed
     for t in transactions:
