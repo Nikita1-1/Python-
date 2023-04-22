@@ -2,6 +2,8 @@ import telebot
 import requests
 from pprint import pprint 
 
+#you will need this if your create different file with api_telegram_bot key and name it API_KEY
+#then import it from file name bot_key variable API_KEY
 from bot_key import API_KEY
 
 bot = telebot.TeleBot(API_KEY, parse_mode=None)
