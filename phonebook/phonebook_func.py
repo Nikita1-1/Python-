@@ -127,15 +127,15 @@ def addToList(self):
 
 def onDelete(self):
     var_select = self.lstList1.get(self.lstList1.curselection())# Listbox's selected value
-    conn =sqlite3.connect('db_phonebook.db')
+    conn = sqlite3.connect('db_phonebook.db')
     with conn:
-        cur = conn.sursor()
+        cur = conn.cursor()
         # check count to ensure that this is not the last record in
         # the database...cannot delete last record or we will get an error
         cur.execute("""SELECT COUNT(*) FROMtbl_phonebok""")
         count = cur.fetchone()[0]
         if count > 1: # if count more than 1 meaning there is more than 1 row (user) in the database
-            confirm = mesagebox.askokcancel("Delete Confirmation", "All information associated with, ({}) \nwill be permanently deleted from the database. \n\nProceed with the deletion request?".format(var_select))
+            confirm = messagebox.askokcancel("Delete Confirmation", "All information associated with, ({}) \nwill be permanently deleted from the database. \n\nProceed with the deletion request?".format(var_select))
             if confirm:
                 conn = sqlite3.connect('db_phonebook.db')
                 with conn:
@@ -145,7 +145,7 @@ def onDelete(self):
 ######             onRefresh(self) # update the listbox of the changes
                 conn.commit()
         else:
-            confirm = mesagebox.showerror('Last Record Error', '({}) is the last record in the database and cannot be deleted at this time. \n\nPlease add another record first before you can delete({}).'.format(var_select,var_select))
+            confirm = messagebox.showerror('Last Record Error', '({}) is the last record in the database and cannot be deleted at this time. \n\nPlease add another record first before you can delete({}).'.format(var_select,var_select))
     conn.close()
 
 

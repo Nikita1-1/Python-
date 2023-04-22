@@ -13,7 +13,7 @@ class BankAccount:
 
 
 
-    def print_protective_data(self):# this is a protective method meaning that you point this underline in case if this info should be print oly inside the class
+    def print_protective_data(self):# this is a protective method meaning that you write this underline in case if this info should be printed oly inside the class
         print(self._member_id)# so if i create an object with this paramers and call it, it will give me error because parametr name, balance, passport in __init__ function are privat
         
 
