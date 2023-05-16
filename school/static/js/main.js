@@ -38,3 +38,5 @@ function updateUserOrder(productId, action){
     //we wil get the error because we dont have csrf token, we can create it via django documentation
 }
 
+
+

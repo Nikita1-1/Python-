@@ -1,5 +1,6 @@
 import json
 
+from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, get_object_or_404, redirect
 from django.template.context_processors import request
 from rest_framework.response import Response
@@ -71,6 +72,40 @@ def updateItem(request):
             orderItem.delete()
 
         return JsonResponse({'message': 'Item updated successfully'})
+
+
+
+# def updateItem(request):
+#     data = json.loads(request.body)
+#     productId = data['productId']
+#     action = data['action']
+#     print('Action:', action)
+#     print('Product ID:', productId)
+#
+#     product = Product.objects.get(id=productId)
+#     order, created = Order.objects.get_or_create(completed=False)
+#
+#     try:
+#         orderItem = OrderItem.objects.filter(order=order, product=product).first()
+#         print('Existing OrderItem:', orderItem)
+#     except ObjectDoesNotExist:
+#         orderItem = OrderItem(order=order, product=product)
+#         print('New OrderItem:', orderItem)
+#
+#     if action == 'add':
+#         orderItem.quantity += 1
+#     elif action == 'remove':
+#         orderItem.quantity -= 1
+#
+#     if orderItem.quantity <= 0:
+#         orderItem.delete()
+#         print('OrderItem deleted')
+#     else:
+#         orderItem.save()
+#         print('OrderItem saved')
+#
+#     return JsonResponse({'message': 'Item updated successfully'})
+
 
 
 # class CommentsViewSet(ModelViewSet):

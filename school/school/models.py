@@ -1,4 +1,3 @@
-
 from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
@@ -42,14 +41,13 @@ class Order(models.Model):
 
 class OrderItem(models.Model):
     quantity = models.IntegerField(default=0, null=True, blank=True)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    order = models.ForeignKey(Order, on_delete=models.CASCADE, null=True)
+    product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True, blank=True)
+    order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
 
     def get_total(self):
         total = self.quantity * self.product.price
         return total
-
 
 
 
