@@ -1,12 +1,13 @@
 # Python-
 Welcome to my Python portfolio where you can find my
-<h1>  Backend Basic Python Projects </h1>
+<h1>  Backend Python Projects </h1>
 where i had to work on backend development small project applications as well as python language in general. Worked with Django Framework on projects - <h4> BlueBirdBanking, Django University, MainApp, Phonebook, File Transfer</h4> Please follow the links to find my main projects such as:
 <hr>
 
 <h3> Projects: </h3>
 
 <ul> 
+     <li><a href="https://github.com/Nikita1-1/Python-/tree/main/school" target="_blank">Pet Project BackEnd Development(will be update time to time)</a></li>
     <li><a href="https://github.com/Nikita1-1/Python-/tree/main/pyhton_projects/DjangoUniversity" target="_blank">Django University</a></li>
     <li><a href="https://github.com/Nikita1-1/Python-/tree/main/pyhton_projects/BlueBirdBanking_project/BlueBirdbanking" target="_blank">Blue Bird Banking</a></li>
     <li><a href="https://github.com/Nikita1-1/Python-/tree/main/phonebook" target="_blank">Phone Book</a></li>
