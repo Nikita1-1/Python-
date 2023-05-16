@@ -1,6 +1,6 @@
 # Python-
 Welcome to my Python portfolio where you can find my
-<h1>  Backend Basic Python Projects </h1>
+<h1>  Backend Python Projects </h1>
 where i had to work on backend development small project applications as well as python language in general. Worked with Django Framework on projects - <h4> BlueBirdBanking, Django University, MainApp, Phonebook, File Transfer</h4> Please follow the links to find my main projects such as:
 <hr>
 
